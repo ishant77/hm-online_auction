@@ -1,0 +1,69 @@
+<html>
+<body>
+
+  <nav class="navbar navbar-expand-lg header navbar-dark">
+  <a class="navbar-brand">Online Auction</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="seller" routerLinkActive="active" class="nav-link">Seller List</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="product" routerLinkActive="active" class="nav-link">Product List</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="customer" routerLinkActive="active" class="nav-link">Customer List</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a routerLink="insert-seller" routerLinkActive="active" class="nav-link">Register Seller</a>
+      </li> -->
+  </ul>
+  
+  </div>
+  <button class="nav-item btn btn-info" style=" color:white;margin-right:10px;" routerLink="/insert-seller">Register Seller</button>
+
+      <button class="nav-item btn btn-info"  style=" color:white;margin-right:10px; " routerLink="/insert-customer">Register Customer</button>
+</nav>
+
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+  <section class="footer">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Register as a seller for free</span>
+          <button type="button" class="btn btn-outline-light btn-rounded">
+            Sign up!
+          </button>
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Ishant</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+  
+
+<!-- End of .container -->
+
+</body>
+</html>
